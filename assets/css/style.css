@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+:root {
+    --primary-color: #07689f;
+    --secondary-color: #ffc93c;
+    --third-color: #40a8c4;
+    --fourth-color: #40a8c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: poppins;
+}
+
+/* LOGIN & REGISTER*/
+.card {
+    width: 50%;
+    border-radius: 12px;
+    box-shadow: 3px 8px 16px rgb(7, 104, 159, 0.1);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+}
+
+.card h2,
+p {
+    text-align: center;
+}
+
+.card h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.card .form-label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card form input {
+    font-size: 14px;
+}
+
+.btn-lr {
+    color: white;
+    font-weight: 500;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    transition: all ease-in-out 0.5s;
+}
+
+.btn-lr:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0px 6px 16px rgb(7, 104, 159, 0.2);
+}
+
+
+/* Responsive untuk max size tablet */
+@media (max-width: 767.98px) {
+    .card {
+        width: 100%;
+    }
+}
