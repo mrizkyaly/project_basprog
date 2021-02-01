@@ -4,7 +4,7 @@
     --primary-color: #07689f;
     --secondary-color: #ffc93c;
     --third-color: #40a8c4;
-    --fourth-color: #40a8c4;
+    --fourth-color: #a2d5f2;
 }
 
 * {
@@ -15,40 +15,45 @@
 }
 
 /* LOGIN & REGISTER*/
-.card {
-    width: 50%;
+#auth .card {
+    width: 35%;
     border-radius: 12px;
-    box-shadow: 3px 8px 16px rgb(7, 104, 159, 0.1);
+    border: none;
+    box-shadow: 6px 8px 16px rgb(255, 201, 159, 0.1);
 }
 
-.card img {
+#auth .card img {
     width: 80px;
     height: 80px;
 }
 
-.card h2,
-p {
+#auth .card h2,
+#auth .card p {
     text-align: center;
 }
 
-.card h2 {
+#auth .card h2 {
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.card p {
+#auth .card p {
     font-weight: 400;
     font-size: 14px;
     text-transform: lowercase;
 }
 
-.card .form-label {
+#auth .card .form-label {
     font-weight: 500;
     font-size: 16px;
 }
 
-.card form input {
+#auth .card form input {
     font-size: 14px;
+}
+
+#auth .card form input:focus {
+    border-color: var(--primary-color);
 }
 
 .btn-lr {
@@ -62,13 +67,254 @@ p {
 .btn-lr:hover {
     background-color: transparent;
     color: var(--primary-color);
-    box-shadow: 0px 6px 16px rgb(7, 104, 159, 0.2);
+    box-shadow: 0px 3px 16px rgb(7, 104, 159, 0.1);
 }
 
+/* NAVBAR */
+.navbar {
+    border-radius: 0px 0px 18px 18px;
+    background-color: white;
+    transition: all ease 0.5s;
+    box-shadow: 0px 4px 25px rgb(7, 104, 159, 0.1)
+}
+
+#header .navbar .navbar-nav .nav-link {
+    font-weight: 600;
+}
+
+#header .navbar .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+#header .navbar .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.btn-join-praktikum {
+    font-weight: 600;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: all ease-out 0.3s;
+}
+
+.btn-join-praktikum:hover {
+    color: var(--primary-color);
+    box-shadow: 0px 6px 25px rgb(7, 104, 159, 0.2);
+}
+
+/* Jumbotron */
+#jumbotron .container {
+    margin-top: 100px;
+}
+
+#jumbotron .card {
+    border: none;
+}
+
+#jumbotron h2 {
+    font-weight: 700;
+}
+
+#jumbotron p {
+    font-weight: 400;
+    color: #b0b0b0;
+}
+
+#jumbotron .alert {
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 12px;
+    background-color: var(--secondary-color);
+}
+
+.btn-learn {
+    font-weight: 500;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn-learn:hover {
+    opacity: 90%;
+    color: white;
+    box-shadow: 3px 6px 12px rgb(7, 104, 159, 0.2);
+}
+
+/* Course seciton */
+#course .container {
+    margin-top: 100px;
+}
+
+#course h3 {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.garis {
+    height: 5px;
+    width: 15%;
+    border-radius: 50px;
+    background: var(--secondary-color);
+}
+
+#course .card {
+    border: none;
+    border-radius: 20px;
+    width: 28rem !important;
+    box-shadow: 4px 8px 25px rgb(7, 104, 159, 0.1);
+}
+
+#course .card img {
+    width: 50px;
+}
+
+#course .card .card-title {
+    color: var(--primary-color);
+}
+
+#course .card .card-text {
+    color: #b0b0b0;
+}
+
+#course .card a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+#course .card a:hover {
+    color: var(--fourth-color);
+    text-decoration: underline;
+}
+
+/* Teamwork section */
+#teamwork .container {
+    margin-top: 100px;
+}
+
+#teamwork .card {
+    border: none;
+}
+
+#teamwork .card h5 {
+    color: var(--secondary-color);
+}
+
+#teamwork .card h2 {
+    font-weight: 600;
+}
+
+#teamwork .card p {
+    color: #b0b0b0;
+}
+
+/* Join Us Section */
+#joinus .container {
+    margin-top: 100px;
+}
+
+#joinus .card {
+    border: var(--primary-color);
+    background-color: var(--primary-color);
+    width: 50rem;
+    border-radius: 20px;
+    box-shadow: 8px 16px 25px rgb(7, 104, 159, 0.4);
+}
+
+#joinus .card .card-title {
+    color: white;
+    font-weight: 600;
+}
+
+#joinus .card p {
+    color: whitesmoke;
+}
+
+.btn-join {
+    border: none;
+    width: 200px;
+    font-weight: 500;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: black;
+    transition: all ease 0.3s;
+}
+
+.btn-join:hover {
+    width: 230px;
+}
+
+/* Footer */
+#footer {
+    border-radius: 20px 20px 0px 0px;
+    border-top: 1px solid #eeeeee;
+    margin-top: 100px;
+    box-shadow: 0px -4px 10px rgb(7, 104, 159, 0.1)
+}
+
+#footer .lab img {
+    width: 75px;
+}
+
+#footer .lab h5 {
+    font-weight: 600;
+}
+
+#footer .lab p {
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+#footer .lab i {
+    color: var(--primary-color);
+    font-size: 24px;
+    transition: all ease 0.5s;
+}
+
+#footer .lab i:hover {
+    color: var(--secondary-color);
+}
+
+#footer .garis-footer {
+    height: 5px;
+    width: 20%;
+    border-radius: 50px;
+    background: var(--secondary-color);
+}
+
+#footer h5 {
+    font-weight: 600;
+}
+
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer a {
+    color: var(--third-color);
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+#footer a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+#footer .courtesy {
+    border-top: 1px solid #eeeeee;
+}
+
+#footer span {
+    font-weight: 500;
+    font-size: 16px;
+}
 
 /* Responsive untuk max size tablet */
-@media (max-width: 767.98px) {
-    .card {
+@media (max-width: 991.98px) {
+    #auth .card {
         width: 100%;
     }
 }
