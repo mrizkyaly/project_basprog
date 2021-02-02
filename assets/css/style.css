@@ -121,7 +121,7 @@
 
 /* Jumbotron */
 #jumbotron .container {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #jumbotron .card {
@@ -160,7 +160,7 @@
 
 /* Course seciton */
 #course .container {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #course h3 {
@@ -230,7 +230,7 @@
 
 /* Join Us Section */
 #joinus .container {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #joinus .card {
@@ -387,8 +387,17 @@
         font-size: 10px;
     }
 
+    .btn-join {
+        font-size: 12px;
+    }
+
     /* Footer */
     #footer .garis-footer {
         width: 10%;
+    }
+
+    #footer .courtesy span,
+    #footer .courtesy a {
+        font-size: 8px;
     }
 }
