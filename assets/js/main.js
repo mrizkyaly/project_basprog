@@ -1,10 +1,9 @@
 $(document).ready(function () {
-    // Scroll
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > 10) {
-            $('.navbar').addClass('active');
+            $('.navbar').addClass('active p-3');
         } else {
-            $('.navbar').removeClass('active');
+            $('.navbar').removeClass('active p-3');
         }
     });
 });

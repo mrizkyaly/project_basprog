@@ -19,7 +19,7 @@
     width: 35%;
     border-radius: 12px;
     border: none;
-    box-shadow: 6px 8px 16px rgb(255, 201, 159, 0.1);
+    box-shadow: 0px 8px 16px rgb(7, 104, 159, 0.1);
 }
 
 #auth .card img {
@@ -72,10 +72,13 @@
 
 /* NAVBAR */
 .navbar {
-    border-radius: 0px 0px 18px 18px;
+    border-radius: 0px 0px 20px 20px;
     background-color: white;
     transition: all ease 0.5s;
-    box-shadow: 0px 4px 25px rgb(7, 104, 159, 0.1)
+}
+
+.navbar.active {
+    box-shadow: 0px 4px 25px rgb(7, 104, 159, 0.1);
 }
 
 #header .navbar .navbar-nav .nav-link {
@@ -87,6 +90,20 @@
 }
 
 #header .navbar .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+#header .navbar .dropdown-menu {
+    border-radius: 12px;
+    box-shadow: 4px 8px 25px rgb(7, 104, 159, 0.2);
+}
+
+#header .navbar .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    transition: all ease 0.3s;
+}
+
+#header .navbar .dropdown-menu .dropdown-item:hover {
     color: var(--primary-color);
 }
 
@@ -116,14 +133,14 @@
 }
 
 #jumbotron p {
-    font-weight: 400;
+    font-size: 14px;
     color: #b0b0b0;
 }
 
 #jumbotron .alert {
     font-weight: 600;
     border-radius: 50px;
-    font-size: 12px;
+    font-size: 10px;
     background-color: var(--secondary-color);
 }
 
@@ -170,10 +187,12 @@
 }
 
 #course .card .card-title {
+    font-weight: 600;
     color: var(--primary-color);
 }
 
 #course .card .card-text {
+    font-size: 14px;
     color: #b0b0b0;
 }
 
@@ -205,6 +224,7 @@
 }
 
 #teamwork .card p {
+    font-size: 14px;
     color: #b0b0b0;
 }
 
@@ -227,6 +247,7 @@
 }
 
 #joinus .card p {
+    font-size: 14px;
     color: whitesmoke;
 }
 
@@ -237,7 +258,7 @@
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
     color: black;
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
 }
 
 .btn-join:hover {
@@ -249,7 +270,7 @@
     border-radius: 20px 20px 0px 0px;
     border-top: 1px solid #eeeeee;
     margin-top: 100px;
-    box-shadow: 0px -4px 10px rgb(7, 104, 159, 0.1)
+    box-shadow: 0px -4px 16px rgb(7, 104, 159, 0.1)
 }
 
 #footer .lab img {
@@ -272,7 +293,7 @@
 }
 
 #footer .lab i:hover {
-    color: var(--secondary-color);
+    color: var(--third-color);
 }
 
 #footer .garis-footer {
@@ -293,13 +314,14 @@
 }
 
 #footer a {
-    color: var(--third-color);
+    font-size: 14px;
+    color: var(--primary-color);
     text-decoration: none;
     transition: all ease 0.3s;
 }
 
 #footer a:hover {
-    color: var(--primary-color);
+    color: var(--third-color);
     text-decoration: underline;
 }
 
@@ -309,12 +331,56 @@
 
 #footer span {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 /* Responsive untuk max size tablet */
 @media (max-width: 991.98px) {
+
+    /* Login & Register */
     #auth .card {
         width: 100%;
+    }
+
+    /* Navbar */
+    #header .navbar .navbar-toggler {
+        border: none;
+        box-shadow: none;
+    }
+
+    #header .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    #header .navbar .navbar-nav .nav-item {
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    #header .navbar .dropdown-menu {
+        border-radius: 0px 0px 20px 20px;
+        border: none;
+        box-shadow: 0px 8px 12px rgb(7, 104, 159, 0.1)
+    }
+
+    .btn-join-praktikum {
+        margin: 10px;
+        display: inline;
+        width: 100%;
+    }
+
+    /* Jumbotron */
+    #jumbotron .card .card-body {
+        text-align: center;
+    }
+
+    /* Teamwork */
+    #teamwork .card .card-body {
+        text-align: center;
+    }
+
+    /* Footer */
+    #footer .garis-footer {
+        width: 10%;
     }
 }
