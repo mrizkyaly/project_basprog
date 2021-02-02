@@ -72,12 +72,13 @@
 
 /* NAVBAR */
 .navbar {
-    border-radius: 0px 0px 20px 20px;
+    border: 1px solid #eeeeee;
     background-color: white;
     transition: all ease 0.5s;
 }
 
 .navbar.active {
+    border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 4px 25px rgb(7, 104, 159, 0.1);
 }
 
@@ -94,6 +95,7 @@
 }
 
 #header .navbar .dropdown-menu {
+    border: none;
     border-radius: 12px;
     box-shadow: 4px 8px 25px rgb(7, 104, 159, 0.2);
 }
@@ -121,7 +123,7 @@
 
 /* Jumbotron */
 #jumbotron .container {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 #jumbotron .card {
@@ -153,15 +155,15 @@
 }
 
 .btn-learn:hover {
-    opacity: 90%;
+    /* opacity: 90%; */
     color: white;
-    box-shadow: 3px 6px 12px rgb(7, 104, 159, 0.2);
+    box-shadow: 4px 8px 16px rgb(7, 104, 159, 0.2);
 }
 
 
 /* Course seciton */
 #course .container {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 #course h3 {
@@ -209,7 +211,7 @@
 
 /* Teamwork section */
 #teamwork .container {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #teamwork .card {
@@ -269,7 +271,7 @@
 #footer {
     border-radius: 20px 20px 0px 0px;
     border-top: 1px solid #eeeeee;
-    margin-top: 100px;
+    margin-top: 80px;
     box-shadow: 0px -4px 16px rgb(7, 104, 159, 0.1)
 }
 
