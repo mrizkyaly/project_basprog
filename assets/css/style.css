@@ -335,7 +335,7 @@
 }
 
 /* Responsive untuk max size tablet */
-@media (max-width: 991.98px) {
+@media (min-width: 576px) {
 
     /* Login & Register */
     #auth .card {
