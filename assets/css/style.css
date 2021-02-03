@@ -511,4 +511,12 @@
     #auth .card p {
         font-size: 12px;
     }
+
+    #news p {
+        font-size: 10px;
+    }
+
+    #news .nav .nav-item .nav-link {
+        font-size: 8px;
+    }
 }
