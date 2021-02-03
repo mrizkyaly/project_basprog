@@ -98,14 +98,17 @@
     border: none;
     border-radius: 12px;
     box-shadow: 4px 8px 25px rgb(7, 104, 159, 0.2);
+
 }
 
 #header .navbar .dropdown-menu .dropdown-item {
     font-size: 14px;
     transition: all ease 0.3s;
+    background-color: white;
 }
 
 #header .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: rgb(13, 110, 253, 0.1);
     color: var(--primary-color);
 }
 
@@ -336,6 +339,95 @@
     font-size: 12px;
 }
 
+/* News Section */
+#news {
+    margin-top: 120px;
+}
+
+#news h1 {
+    font-weight: 600;
+}
+
+#news p {
+    font-size: 18px;
+}
+
+#news .nav {
+    font-size: 14px;
+}
+
+#news .nav .nav-item .nav-link {
+    border-radius: 5px;
+    color: #adb5bd;
+}
+
+#news .nav .nav-item .nav-link:hover {
+    color: rgb(13, 110, 253);
+}
+
+#news .nav .nav-item .nav-link.active {
+    color: rgb(13, 110, 253);
+    background-color: rgb(13, 110, 253, 0.1);
+}
+
+#news .search {
+    border: none;
+    font-size: 14px;
+    box-shadow: 0px 8px 16px rgb(7, 104, 159, 0.1);
+}
+
+#news .search::placeholder {
+    font-size: 14px;
+}
+
+#news .card {
+    border-radius: 12px;
+    border-color: #eeeeee;
+    transition: all ease-in-out 0.5s;
+}
+
+#news .card:hover {
+    box-shadow: 4px 8px 25px rgb(7, 104, 159, 0.2);
+}
+
+#news .card .badge-berita {
+    color: rgb(25, 135, 84);
+    background-color: rgb(25, 135, 84, 0.1);
+}
+
+#news .card .badge-pt {
+    color: rgb(13, 110, 253);
+    background-color: rgb(13, 110, 253, 0.1);
+}
+
+#news .card .badge-sd {
+    color: rgb(220, 53, 69);
+    background-color: rgb(220, 53, 69, 0.1);
+}
+
+#news .card a {
+    text-decoration: none;
+}
+
+#news .card .card-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: all ease 0.3s;
+}
+
+#news .card .card-title:hover {
+    color: var(--third-color);
+}
+
+#news .card .card-subtitle {
+    font-size: 12px;
+}
+
+#news .card .card-text {
+    font-size: 14px;
+}
+
 /* Responsive untuk max size tablet */
 @media (max-width: 991.98px) {
 
@@ -355,9 +447,9 @@
     }
 
     #header .navbar .dropdown-menu {
-        border-radius: 0px 0px 20px 20px;
+        /* border-radius: 0px 0px 20px 20px; */
         border: none;
-        box-shadow: px 8px 12px rgb(7, 104, 159, 0.1)
+        box-shadow: 0px 8px 25px rgb(7, 104, 159, 0.1)
     }
 
     .btn-join-praktikum {
