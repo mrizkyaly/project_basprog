@@ -3,8 +3,12 @@ $(document).ready(function () {
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > 10) {
             $('.navbar').addClass('active p-3');
+            $('.back-to-top').addClass('visible animate__animated animate__bounce');
+            $('.back-to-top').removeClass('invisible');
         } else {
             $('.navbar').removeClass('active p-3');
+            $('.back-to-top').removeClass('visible animate__animated animate__bounce');
+            $('.back-to-top').addClass('invisible');
         }
     });
 
