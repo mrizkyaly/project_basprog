@@ -24,7 +24,8 @@
 </head>
 
 <body>
-    <section id="header">
+    <!-- Header -->
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top p-2 text-capitalize">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -47,7 +48,8 @@
                             </a>
                             <ul class="dropdown-menu py-3" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item px-4 py-3" href="news.html"><i
-                                            class="fa fa-newspaper-o"></i> Semua Berita</a></li>
+                                            class="fa fa-newspaper-o"></i>
+                                        Semua Berita</a></li>
                                 <li><a class="dropdown-item px-4 py-3" href="news.html"><i class="fa fa-code"></i>
                                         Pemrograman Terstruktur</a></li>
                                 <li><a class="dropdown-item px-4 py-3" href="news.html"><i class="fa fa-tasks"></i>
@@ -57,8 +59,22 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Asisten</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="news.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                laboratorium
+                            </a>
+                            <ul class="dropdown-menu py-3" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item px-4 py-3" href="news.html">
+                                        <i class="fa fa-user-circle-o"></i></i> Dosen & Asisten
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item px-4 py-3" href="news.html">
+                                        <i class="fa fa-file-code-o"></i> Code Editor
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -68,7 +84,7 @@
                 </div>
             </div>
         </nav>
-    </section>
+    </header>
 
     <!-- News Section -->
     <section id="news">
@@ -96,13 +112,10 @@
                             <a class="nav-link" href="#" data-filter=".strukdat"><i class="fa fa-tasks"></i> Struktur
                                 Data</a>
                         </li>
-                        <li class="nav-item me-1 p-1">
-                            <a class="nav-link" href="#" data-filter=".strukdat"><i class="fa fa-tasks"></i> Event</a>
-                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-5 p-2">
-                    <input class="form-control search p-3 w-100" type="search" placeholder="Cari berita apa hari ini ?"
+                    <input class="form-control search p-3 w-100" type="search" placeholder=" Cari berita apa hari ini ?"
                         aria-label="Search">
                 </div>
             </div>
@@ -112,13 +125,19 @@
                         <div class="card-body">
                             <img src="./assets/img/c++thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="dflex mt-3">
-                                <a href="news.html"><span class="badge badge-berita"><i class="fa fa-newspaper-o"></i>
-                                        Berita</span></a>
-                                <a href="news.html"><span class="badge badge-pt"><i class="fa fa-code"></i> Pemrograman
-                                        Terstruktur</span></a>
+                                <a href="news.html">
+                                    <span class="badge badge-berita">
+                                        <i class="fa fa-newspaper-o"></i> Berita
+                                    </span>
+                                </a>
+                                <a href="news.html">
+                                    <span class="badge badge-pt">
+                                        <i class="fa fa-code"></i> Pemrograman Terstruktur
+                                    </span>
+                                </a>
                             </div>
                             <div class="my-3">
-                                <a href="">
+                                <a href="detail_news.html">
                                     <h5 class="card-title">Pendaftaran Praktikum Pemrograman Terstruktur XI 2020</h5>
                                 </a>
                             </div>
@@ -151,11 +170,24 @@
                         <div class="card-body">
                             <img src="./assets/img/c++thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="dflex mt-3">
-                                <span class="badge badge-berita"><i class="fa fa-newspaper-o"></i> Berita</span>
-                                <span class="badge badge-pt"><i class="fa fa-code"></i> Pemrograman Terstruktur</span>
+                                <a href="news.html">
+                                    <span class="badge badge-berita">
+                                        <i class="fa fa-newspaper-o"></i> Berita
+                                    </span>
+                                </a>
+                                <a href="news.html">
+                                    <span class="badge badge-pt">
+                                        <i class="fa fa-code"></i> Pemrograman Terstruktur
+                                    </span>
+                                </a>
+                                <a href="news.html">
+                                    <span class="badge badge-sd">
+                                        <i class="fa fa-tasks"></i> Struktur Data
+                                    </span>
+                                </a>
                             </div>
                             <div class="my-3">
-                                <a href="">
+                                <a href="detail_news.html">
                                     <h5 class="card-title">Jadwal Praktikum Pemrograman Terstruktur Periode XI</h5>
                                 </a>
                             </div>
@@ -188,11 +220,19 @@
                         <div class="card-body">
                             <img src="./assets/img/c++thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="dflex mt-3">
-                                <span class="badge badge-berita"><i class="fa fa-newspaper-o"></i> Berita</span>
-                                <span class="badge badge-sd"><i class="fa fa-tasks"></i> Struktur Data</span>
+                                <a href="news.html">
+                                    <span class="badge badge-berita">
+                                        <i class="fa fa-newspaper-o"></i> Berita
+                                    </span>
+                                </a>
+                                <a href="news.html">
+                                    <span class="badge badge-sd">
+                                        <i class="fa fa-tasks"></i> Struktur Data
+                                    </span>
+                                </a>
                             </div>
                             <div class="my-3">
-                                <a href="">
+                                <a href="detail_news.html">
                                     <h5 class="card-title">Tes Akhir Praktikum Pemrograman Terstruktur Periode XI</h5>
                                 </a>
                             </div>
@@ -224,9 +264,16 @@
                         <div class="card-body element-item petruk news strukdat">
                             <img src="./assets/img/c++thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="dflex mt-3">
-                                <span class="badge badge-berita"><i class="fa fa-newspaper-o"></i> Berita</span>
-                                <span class="badge badge-pt"><i class="fa fa-code"></i> Pemrograman Terstruktur</span>
-                                <span class="badge badge-sd"><i class="fa fa-tasks"></i> Struktur Data</span>
+                                <a href="news.html">
+                                    <span class="badge badge-berita">
+                                        <i class="fa fa-newspaper-o"></i> Berita
+                                    </span>
+                                </a>
+                                <a href="news.html">
+                                    <span class="badge badge-sd">
+                                        <i class="fa fa-tasks"></i> Struktur Data
+                                    </span>
+                                </a>
                             </div>
                             <div class="my-3">
                                 <a href="">
@@ -262,10 +309,14 @@
                         <div class="card-body element-item news">
                             <img src="./assets/img/c++thumbnail.jpg" class="card-img-top" alt="...">
                             <div class="dflex mt-3">
-                                <span class="badge badge-berita"><i class="fa fa-newspaper-o"></i> Berita</span>
+                                <a href="news.html">
+                                    <span class="badge badge-berita">
+                                        <i class="fa fa-newspaper-o"></i> Berita
+                                    </span>
+                                </a>
                             </div>
                             <div class="my-3">
-                                <a href="">
+                                <a href="detail_news.html">
                                     <h5 class="card-title">Asisten Aktif Di Laboratorium Bahasa Pemrograman</h5>
                                 </a>
                             </div>
@@ -297,7 +348,8 @@
     </section>
 
     <!-- Footer -->
-    <section id="footer">
+    <!-- Footer -->
+    <footer>
         <div class="container pt-5 ps-5 pe-5">
             <div class="row">
                 <div class="col-lg-6 p-3 lab">
@@ -335,13 +387,10 @@
                     <div class="garis-footer mb-3"></div>
                     <ul class="">
                         <li>
-                            <a href="#">About</a>
+                            <a href="#">Dosen & Asisten</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms &amp; Conditions</a>
+                            <a href="code_editor.html">Code Editor</a>
                         </li>
                     </ul>
                 </div>
@@ -353,7 +402,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <!-- Scroll top button -->
     <a href="#" class="btn btn-warning btn-lg back-to-top invisible" role="button"><i class="fa fa-arrow-up"></i></a>

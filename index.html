@@ -26,10 +26,10 @@
 
 <body>
     <!-- Header Section -->
-    <section id="header">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top p-2 text-capitalize">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="./assets/img/svg/lbp-blue.svg" alt="" width="70" height="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,24 +40,41 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-4 me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="news.html" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Berita
                             </a>
                             <ul class="dropdown-menu py-3" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item px-4 py-3" href="news.html">Semua Berita</a></li>
-                                <li><a class="dropdown-item px-4 py-3" href="news.html">Pemrograman Terstruktur</a></li>
-                                <li><a class="dropdown-item px-4 py-3" href="news.html">Struktur Data</a></li>
+                                <li><a class="dropdown-item px-4 py-3" href="news.html"><i
+                                            class="fa fa-newspaper-o"></i> Semua Berita</a></li>
+                                <li><a class="dropdown-item px-4 py-3" href="news.html"><i class="fa fa-code"></i>
+                                        Pemrograman Terstruktur</a></li>
+                                <li><a class="dropdown-item px-4 py-3" href="news.html"><i class="fa fa-tasks"></i>
+                                        Struktur Data</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Asisten</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="news.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                laboratorium
+                            </a>
+                            <ul class="dropdown-menu py-3" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item px-4 py-3" href="">
+                                        <i class="fa fa-user-circle-o"></i></i> Dosen & Asisten
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item px-4 py-3" href="code_editor.html">
+                                        <i class="fa fa-file-code-o"></i> Code Editor
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -67,7 +84,7 @@
                 </div>
             </div>
         </nav>
-    </section>
+    </header>
 
     <!-- Jumbotron -->
     <section id="jumbotron">
@@ -91,8 +108,7 @@
                                     suscipit excepturi repellendus nobis voluptas aliquid? Veritatis, iusto?</p>
                             </div>
                             <div class="mt-4">
-                                <button type="button" class="btn btn-learn px-5">Learn
-                                    Now</button>
+                                <button type="button" class="btn btn-learn px-5">Belajar Sekarang</button>
                             </div>
                         </div>
                     </div>
@@ -162,7 +178,7 @@
                                     tenetur, perspiciatis quas!</p>
                             </div>
                             <div class="mt-4">
-                                <button type="button" class="btn btn-learn px-5">Learn Now</button>
+                                <button type="button" class="btn btn-learn px-5">Belajar Sekarang</button>
                             </div>
                         </div>
                     </div>
@@ -192,7 +208,7 @@
     </section>
 
     <!-- Footer -->
-    <section id="footer">
+    <footer>
         <div class="container pt-5 ps-5 pe-5">
             <div class="row">
                 <div class="col-lg-6 p-3 lab">
@@ -230,13 +246,10 @@
                     <div class="garis-footer mb-3"></div>
                     <ul class="">
                         <li>
-                            <a href="#">About</a>
+                            <a href="#">Dosen & Asisten</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms &amp; Conditions</a>
+                            <a href="code_editor.html">Code Editor</a>
                         </li>
                     </ul>
                 </div>
@@ -248,8 +261,7 @@
                 </div>
             </div>
         </div>
-
-    </section>
+    </footer>
 
     <!-- Scroll top button -->
     <a href="#" class="btn btn-warning btn-lg back-to-top invisible" role="button"><i class="fa fa-arrow-up"></i></a>
