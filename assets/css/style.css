@@ -195,6 +195,9 @@ header .navbar .dropdown-menu .dropdown-item:hover {
     box-shadow: 4px 8px 16px rgb(7, 104, 159, 0.2);
 }
 
+.btn-learn:focus {
+    box-shadow: none;
+}
 
 /* Course seciton */
 #course .container {
@@ -538,9 +541,19 @@ footer span {
     font-size: 14px;
 }
 
+#user .modal .modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+#user .modal .btn-close:focus {
+    box-shadow: none;
+}
+
 #user .modal .modal-title {
     color: var(--primary-color);
 }
+
 
 /* Responsive untuk max size tablet */
 @media (max-width: 991.98px) {
@@ -604,6 +617,7 @@ footer span {
     footer .courtesy a {
         font-size: 8px;
     }
+
 }
 
 @media (max-width: 575.98px) {
