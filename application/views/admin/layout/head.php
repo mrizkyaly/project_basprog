@@ -36,6 +36,10 @@
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/summernote/summernote-bs4.css">
 	<!-- Google Font: Source Sans Pro -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+	<!-- Tiny MCE -->
+	<script src="https://cdn.tiny.cloud/1/cn1kl45xy0gr2qjcg54aabqxsjpu7stixtfz8aa74ccmgb6f/tinymce/5/tinymce.min.js"
+		referrerpolicy="origin"></script>
+	<script src="<?php echo base_url() ?>assets/vendor/tinymce.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">

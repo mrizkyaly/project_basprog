@@ -22,6 +22,9 @@
 					<th>NO</th>
 					<th>FOTO</th>
 					<th>NAMA</th>
+					<th>NPM</th>
+					<th>NOMOR</th>
+					<th>JABATAN</th>
 					<th>USERNAME</th>
 					<th>ROLE</th>
 					<th>ACTION</th>
@@ -36,6 +39,9 @@
 							class="img img-responsive img-thumbnail rounded-3" width="50">
 					</td>
 					<td><?php echo $user->nama ?></td>
+					<td><?php echo $user->npm ?></td>
+					<td><?php echo $user->nomor ?></td>
+					<td><span class="badge badge-secondary"><?php echo $user->jabatan ?></span></td>
 					<td><?php echo $user->username ?></td>
 					<?php 
 						if ($user->level == "admin") {
@@ -50,6 +56,8 @@
 						<a href="<?php echo base_url('admin/user/edit/'.$user->id_user) ?>"
 							class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
 						<?php include('delete.php') ?>
+						<a href="<?php echo $user->whatsapp ?>" class="btn btn-success btn-xs"><i
+								class="fab fa-whatsapp"></i> WhatsApp</a>
 					</td>
 				</tr>
 				<?php $no++; } ?>

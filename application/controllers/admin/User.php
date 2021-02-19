@@ -36,6 +36,14 @@ class User extends CI_Controller {
 			array( 'required' => '%s harus di isi'
 		));
 
+		$valid->set_rules('npm','NPM','required',
+			array( 'required' => '%s harus di isi'
+		));
+
+		$valid->set_rules('nomor','Nomor','required',
+		array( 'required' => '%s harus di isi'
+		));
+
 		$valid->set_rules('username','Username','required|min_length[5]|max_length[32]|is_unique[users.username]',
 			array( 'required' => '%s harus di isi',
 			'min_length' => '%s minimal 5 karakter',
@@ -82,6 +90,10 @@ class User extends CI_Controller {
 
 				$i = $this->input;
 				$data = array(	'nama'		=> $i->post('nama'),
+								'npm' 		=> $i->post('npm'),
+								'nomor' 	=> $i->post('nomor'),
+								'whatsapp' 	=> $i->post('whatsapp'),
+								'jabatan' 	=> $i->post('jabatan'),
 								'username'	=> $i->post('username'),
 								'password' 	=> SHA1($i->post('password')),
 								'gambar' 	=> $upload_gambar['upload_data']['file_name'],
@@ -108,6 +120,14 @@ class User extends CI_Controller {
 		$valid = $this->form_validation;
 
 		$valid->set_rules('nama','Nama','required',
+			array( 'required' => '%s harus di isi'
+		));
+
+		$valid->set_rules('npm','NPM','required',
+			array( 'required' => '%s harus di isi'
+		));
+
+		$valid->set_rules('nomor','Nomor','required',
 			array( 'required' => '%s harus di isi'
 		));
 
@@ -150,6 +170,10 @@ class User extends CI_Controller {
 					$i = $this->input;
 					$data = array( 	'id_user'	=> $id_user,
 									'nama' 		=> $i->post('nama'),
+									'npm' 		=> $i->post('npm'),
+									'nomor' 	=> $i->post('nomor'),
+									'whatsapp' 	=> $i->post('whatsapp'),
+									'jabatan' 	=> $i->post('jabatan'),
 									'username' 	=> $i->post('username'),
 									'password' 	=> SHA1($i->post('password')),
 									'gambar' 	=> $upload_gambar['upload_data']['file_name'],
@@ -164,6 +188,10 @@ class User extends CI_Controller {
 				$i = $this->input;
 					$data = array( 	'id_user'	=> $id_user,
 									'nama' 		=> $i->post('nama'),
+									'npm' 		=> $i->post('npm'),
+									'nomor' 	=> $i->post('nomor'),
+									'whatsapp' 	=> $i->post('whatsapp'),
+									'jabatan' 	=> $i->post('jabatan'),
 									'username' 	=> $i->post('username'),
 									'password' 	=> SHA1($i->post('password')),
 									// 'gambar' 	=> $upload_gambar['upload_data']['file_name'],

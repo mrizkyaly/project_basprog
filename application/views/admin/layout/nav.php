@@ -24,7 +24,7 @@
 				</li>
 				<li class="nav-header">ARTIKEL</li>
 				<li class="nav-item">
-					<a href="<?php echo base_url('admin/user') ?>" class="nav-link">
+					<a href="<?php echo base_url('admin/artikel') ?>" class="nav-link">
 						<i class="nav-icon far fa-newspaper"></i>
 						<p>Daftar Artikel</p>
 					</a>
@@ -32,7 +32,7 @@
 				<li class="nav-header">SETTING</li>
 				<li class="nav-item">
 					<a href="<?php echo base_url('admin/user') ?>" class="nav-link">
-						<i class="nav-icon fas fa-user"></i>
+						<i class="nav-icon fas fa-users"></i>
 						<p>User</p>
 					</a>
 				</li>

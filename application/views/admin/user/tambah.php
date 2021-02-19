@@ -25,6 +25,44 @@
 			</div>
 			<div class="col-4">
 				<div class="form-group">
+					<label class="control-label">NPM</label>
+					<div class="">
+						<input type="text" name="npm" class="form-control" placeholder=""
+							value="<?php echo set_value('npm') ?>" required>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="form-group">
+					<label class="control-label">Nomor</label>
+					<div class="">
+						<input type="text" name="nomor" class="form-control" placeholder=""
+							value="<?php echo set_value('nomor') ?>" required>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="form-group">
+					<label class="control-label">Link WhatsApp</label>
+					<div class="">
+						<input type="text" name="whatsapp" class="form-control" placeholder=""
+							value="<?php echo set_value('whatsapp') ?>">
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="form-group">
+					<label class="control-label">Jabatan</label>
+					<div class="">
+						<select name="jabatan" class="form-control">
+							<option value="Koordiantor Aslab">Koordiantor Aslab</option>
+							<option value="Asisten Laboratorium">Asisten Laboratorium</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="form-group">
 					<label class="control-label">Level Hak Akses</label>
 					<div class="">
 						<select name="level" class="form-control">
