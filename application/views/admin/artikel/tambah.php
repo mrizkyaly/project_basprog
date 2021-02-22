@@ -16,19 +16,31 @@
 		<div class="row d-flex">
 			<div class="col-12">
 				<div class="form-group">
-					<label class="control-label">Judul</label>
+					<label class="control-label">Judul Artikel</label>
 					<div class="">
 						<input type="text" name="judul" class="form-control" placeholder=""
 							value="<?php echo set_value('judul') ?>" required>
 					</div>
 				</div>
 			</div>
-			<div class="col-10">
+			<div class="col-6">
 				<div class="form-group">
 					<label class="control-label">Gambar Thumbnail</label>
 					<div class="custom-file">
 						<input type="file" name="gambar_artikel" class="custom-file-input" id="exampleInputFile">
 						<label class="custom-file-label" for="exampleInputFile">Pilih file</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="form-group">
+					<label class="control-label">Kategori</label>
+					<div class="">
+						<select name="kategori" class="form-control">
+							<option value="berita">Berita</option>
+							<option value="pemrograman terstruktur">Pemrograman Terstruktur</option>
+							<option value="struktur data">Struktur Data</option>
+						</select>
 					</div>
 				</div>
 			</div>
@@ -43,30 +55,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-8">
+			<div class="col-12">
 				<div class="form-group">
 					<label class="control-label">Deskripsi</label>
 					<textarea class="form-control" rows="3" name="deskripsi" placeholder=""></textarea>
-				</div>
-			</div>
-			<div class="col-4">
-				<div class="form-group">
-					<label for="exampleInputEmail1">Kategori </label><br>
-					<div class="custom-control custom-checkbox">
-						<input class="custom-control-input" name="kategori[]" type="checkbox" id="kategori-1"
-							value="berita">
-						<label for="kategori-1" class="custom-control-label">Berita</label>
-					</div>
-					<div class="custom-control custom-checkbox">
-						<input class="custom-control-input" name="kategori[]" type="checkbox" id="kategori-2"
-							value="pemrograman terstruktur">
-						<label for="kategori-2" class="custom-control-label">Pemrograman Terstruktur</label>
-					</div>
-					<div class="custom-control custom-checkbox">
-						<input class="custom-control-input" name="kategori[]" type="checkbox" id="kategori-3"
-							value="Struktur Data">
-						<label for="kategori-3" class="custom-control-label">Struktur Data</label>
-					</div>
 				</div>
 			</div>
 			<div class="col-12">

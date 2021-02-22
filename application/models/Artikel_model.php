@@ -27,6 +27,21 @@ class Artikel_model extends CI_Model {
 					
 	}
 
+	public function read($slug)
+	{
+		$this->db->select('artikel.*,
+						users.nama,
+						users.jabatan,
+						users.gambar');
+		$this->db->from('artikel');
+		$this->db->join('users', 'users.id_user = artikel.id_user', 'left');
+
+		$this->db->where('artikel.slug', $slug);
+		$this->db->order_by('id_artikel', 'desc');
+		$query = $this->db->get();
+		return $query->row();
+	}
+
 	// Detail data artikel untuk edit
 	public function detail($id_artikel)
 	{

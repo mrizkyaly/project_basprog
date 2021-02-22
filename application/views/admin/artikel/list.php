@@ -29,19 +29,25 @@
 				<?php $no=1; foreach ($artikel as $artikel) { ?>
 				<tr>
 					<td>
+						<?php echo $artikel->judul ?>
 						<?php
 							if ($artikel->status == "publish") {
 						?>
-						<span class="badge badge-success"><?php echo $artikel->status ?></span>
+						<span class="badge badge-primary"><?php echo $artikel->status ?></span>
 						<?php 
 							}elseif ($artikel->status == "draft") {
 						?>
-						<span class="badge badge-warning"><?php echo $artikel->status ?></span>
+						<span class="badge badge-secondary"><?php echo $artikel->status ?></span>
 						<?php }?>
-						<?php echo $artikel->judul ?>
 					</td>
 					<td>
-						<?php echo $artikel->kategori  ?>
+						<?php if ($artikel->kategori == "berita") {?>
+						<span class="badge badge-success"><?php echo $artikel->kategori ?></span>
+						<?php }elseif ($artikel->kategori == "pemrograman terstruktur") {?>
+						<span class="badge badge-info"><?php echo $artikel->kategori ?></span>
+						<?php }elseif ($artikel->kategori == "struktur data") {?>
+						<span class="badge badge-danger"><?php echo $artikel->kategori ?></span>
+						<?php }?>
 					</td>
 					<td><?php echo $artikel->nama ?></td>
 					<td>
