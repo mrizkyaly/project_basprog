@@ -36,6 +36,12 @@
 						<p>User</p>
 					</a>
 				</li>
+				<li class="nav-item">
+					<a href="<?php echo base_url('admin/konfigurasi') ?>" class="nav-link">
+						<i class="nav-icon fas fa-wrench"></i>
+						<p>Konfigurasi Website</p>
+					</a>
+				</li>
 			</ul>
 		</nav>
 		<!-- /.sidebar-menu -->

@@ -12,7 +12,7 @@
 	<div class="float-right d-none d-sm-block">
 		<b>Theme By </b> <a href="http://adminlte.io">AdminLTE.io</a>
 	</div>
-	<strong>Made With ❤</strong> by Laboratorium Bahasa Pemrograman
+	Made With ❤ by <a href="<?php base_url()?>">Laboratorium Bahasa Pemrograman</a>
 </footer>
 
 <!-- Control Sidebar -->

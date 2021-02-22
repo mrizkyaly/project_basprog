@@ -55,8 +55,10 @@
 					<label class="control-label">Jabatan</label>
 					<div class="">
 						<select name="jabatan" class="form-control">
-							<option value="Koordiantor Aslab">Koordiantor Aslab</option>
-							<option value="Asisten Laboratorium">Asisten Laboratorium</option>
+							<option value="Koordiantor Laboratorium">Koordiantor Laboratorium</option>
+							<option value="Asisten Laboratorium"
+								<?php if ($user->jabatan=="Asisten Laboratorium") { echo "selected";} ?>>
+								Asisten Laboratorium</option>
 						</select>
 					</div>
 				</div>
@@ -67,7 +69,7 @@
 					<div class="">
 						<select name="level" class="form-control">
 							<option value="admin">admin</option>
-							<option value="user">user</option>
+							<option value="user" <?php if ($user->level=="user") { echo "selected";} ?>>user</option>
 						</select>
 					</div>
 				</div>

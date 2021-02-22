@@ -3,19 +3,20 @@
 	<div class="container pt-5 ps-5 pe-5">
 		<div class="row">
 			<div class="col-lg-6 p-3 lab">
-				<img src="<?php echo base_url() ?>assets/client/assets/img/svg/lbp-blue.svg" class="img-fluid mb-4"
+				<img src="<?php echo base_url() ?>assets/client/assets/img/circle-logo.png" class="img-fluid mb-4"
 					alt="" srcset="">
 				<div class="mb-2">
 					<h5>laboratorium Bahasa Pemrograman</h5>
 				</div>
 				<div class="mb-2">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae atque, amet iure
-						voluptatibus eligendi.</p>
+					<p>Di Laboratorium Bahasa Pemrograman Kalian Akan Belajar Mengenai Pemrograman C++ Berbasis
+						Pemrograman Terstuktur
+						Dan Struktur Data</p>
 				</div>
 				<div class="">
-					<i class="fa fa-instagram me-3"></i>
-					<i class="fa fa-github me-3"></i>
-					<i class="fa fa-youtube-play me-3"></i>
+					<a href="https://www.instagram.com/lbp.itats/"><i class="fa fa-instagram me-3"></i></a>
+					<a href="https://www.youtube.com/channel/UC4HUifNHKlSk-IY9l2NvqIg/featured"></a><i
+						class="fa fa-youtube-play me-3"></i>
 				</div>
 			</div>
 			<div class="col-lg-3 p-3">
@@ -23,7 +24,7 @@
 				<div class="garis-footer mb-3"></div>
 				<ul>
 					<li>
-						<a href="<?php echo base_url('berita') ?>">Semua Berita</a>
+						<a href="<?php echo base_url('berita') ?>">Berita</a>
 					</li>
 					<li>
 						<a href="<?php echo base_url('berita') ?>">Pemrograman Terstruktur</a>
@@ -45,7 +46,8 @@
 		</div>
 		<div class="row ">
 			<div class="mt-5 py-4 text-center text-capitalize courtesy">
-				<span>Made With <i class="fa fa-heart" style="color:red"></i> by <a href="index.html">laboratorium
+				<span>Made With <i class="fa fa-heart" style="color:red"></i> by <a
+						href="<?php echo base_url()?>">laboratorium
 						bahasa pemrograman</a></span>
 			</div>
 		</div>

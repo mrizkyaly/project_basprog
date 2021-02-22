@@ -50,9 +50,9 @@
 		<div class="row mt-5 p-1 justify-content-center">
 			<?php foreach ($user as $user) {?>
 			<div class="col-lg-3 col-6 text-center">
-				<div class="card pt-4 m-2">
+				<div class="card pt-4 mx-auto d-block my-2">
 					<img src="<?php echo base_url('assets/upload/image/thumbs/'.$user->gambar) ?>"
-						class="img-fluid img-thumbnail rounded-circle mx-auto d-block w-50" alt="...">
+						class="img-fluid img-thumbnail rounded-circle mx-auto d-block" width="100px" alt="...">
 					<div class="card-body">
 						<h6 class="card-title"><?php echo $user->nama ?></h6>
 						<span class="card-subtitle text-muted"><?php echo $user->jabatan ?></span>

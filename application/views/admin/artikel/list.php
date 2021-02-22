@@ -29,7 +29,9 @@
 				<?php $no=1; foreach ($artikel as $artikel) { ?>
 				<tr>
 					<td>
-						<?php echo $artikel->judul ?>
+						<a href="<?php echo base_url('berita/detail/'.$artikel->slug)?>">
+							<?php echo $artikel->judul ?>
+						</a>
 						<?php
 							if ($artikel->status == "publish") {
 						?>

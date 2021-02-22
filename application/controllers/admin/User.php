@@ -203,7 +203,7 @@ class User extends CI_Controller {
 					redirect(base_url('admin/user'),'refresh');
 			}
 		}
-		$data = array(  'title'     => 'Edit User ~ '.$user->nama,
+		$data = array(  'title'     => 'Edit User',
                         'user'    => $user,
                         'isi'       => 'admin/user/edit'
                     );

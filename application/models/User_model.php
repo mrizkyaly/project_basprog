@@ -43,6 +43,14 @@ class User_model extends CI_Model {
 		return $query->row();
 	}
 
+	// Total User
+	public function total_user(){
+		$this->db->select('COUNT(*) AS total');
+		$this->db->from('users');
+		$query = $this->db->get();
+		return $query->row();
+	}
+
 	// Tambah Data user
 	public function tambah($data){
 		$this->db->insert('users', $data);

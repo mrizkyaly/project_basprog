@@ -6,7 +6,7 @@
 			<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
 		</li>
 		<li class="nav-item d-none d-sm-inline-block">
-			<a href="<?php echo base_url() ?>admin/dashboard" class="nav-link">Admin Page | <?php echo $title ?></a>
+			<a href="<?php echo base_url() ?>" class="nav-link text-uppercase"><strong>Client Page</strong></a>
 		</li>
 	</ul>
 

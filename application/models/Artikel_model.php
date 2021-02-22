@@ -53,6 +53,14 @@ class Artikel_model extends CI_Model {
 		return $query->row();
 	}
 
+		// Total User
+	public function total_artikel(){
+		$this->db->select('COUNT(*) AS total');
+		$this->db->from('artikel');
+		$query = $this->db->get();
+		return $query->row();
+	}
+
 	public function tambah($data)
 	{
 		$this->db->insert('artikel', $data);

@@ -183,7 +183,7 @@ class Artikel extends CI_Controller {
 			}
 		}
 
-		$data = array(	'title'		=> 'Edit User',
+		$data = array(	'title'		=> 'Edit Artikel',
 						'artikel'	=> $artikel,
 						'isi'		=> 'admin/artikel/edit'
 					);

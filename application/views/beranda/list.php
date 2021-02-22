@@ -13,8 +13,7 @@
 								pemrogramn</h2>
 						</div>
 						<div class="mb-3">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at tenetur fuga
-								suscipit excepturi repellendus nobis voluptas aliquid? Veritatis, iusto?</p>
+							<p><?php echo $deskripsi?></p>
 						</div>
 						<div class="mt-4">
 							<a href="<?php echo base_url('berita') ?>"><button type="button"
@@ -46,8 +45,7 @@
 					<img src="<?php echo base_url() ?>assets/client/assets/img/svg/code_yellow.svg"
 						class="img-fluid mb-3" alt="...">
 					<h5 class="card-title">C++</h5>
-					<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vel.</p>
-					<!-- <a href="#" class="card-link">View More <i class='fa fa-arrow-right'></i></a> -->
+					<p class="card-text">Kalian akan belajar mengenai pemrograman C++ dari awal</p>
 				</div>
 			</div>
 			<div class="card m-3">
@@ -55,8 +53,8 @@
 					<img src="<?php echo base_url() ?>assets/client/assets/img/svg/c++_yellow.svg"
 						class="img-fluid mb-3" alt="...">
 					<h5 class="card-title">Pemrograman Terstruktur</h5>
-					<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vel.</p>
-					<!-- <a href="#" class="card-link">View More <i class='fa fa-arrow-right'></i></a> -->
+					<p class="card-text">Kalian akan belajar mengenai pemrograman yan terstruktur menggunakan bahaasa
+						c++</p>
 				</div>
 			</div>
 			<div class="card m-3">
@@ -64,8 +62,7 @@
 					<img src="<?php echo base_url() ?>assets/client/assets/img/svg/sd_yellow.svg" class="img-fluid mb-3"
 						alt="...">
 					<h5 class="card-title">Struktur Data</h5>
-					<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vel.</p>
-					<!-- <a href="#" class="card-link">View More <i class='fa fa-arrow-right'></i></a> -->
+					<p class="card-text">Kalian akan belajar mengenai struktur data menggunakan bahaasa c++</p>
 				</div>
 			</div>
 		</div>
@@ -90,8 +87,7 @@
 							<h2>Kita bekerja sama sebagai tim</h2>
 						</div>
 						<div class="mb-3">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque sed numquam
-								tenetur, perspiciatis quas!</p>
+							<p>Kita disini bekerja sebagai tim untuk mengajari kalian tentang bahasa pemrograman C++</p>
 						</div>
 						<div class="mt-4">
 							<a href="<?php echo base_url('berita') ?>"><button type="button"
@@ -118,7 +114,7 @@
 					<p class="card-text mb-4 px-4">klik tombol dibawah ini yak untuk info mengenai pendaftaran
 						asisten
 						lab bahasa pemrograman lebih lanjut ya</p>
-					<a href="<?php echo base_url('berita') ?>" class="btn btn-join px-5 py-2">Join yuk</a>
+					<a href="<?php echo $daftarAslab ?>" class="btn btn-join px-5 py-2">Join yuk</a>
 				</div>
 			</div>
 		</div>

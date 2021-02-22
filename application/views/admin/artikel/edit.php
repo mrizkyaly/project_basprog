@@ -13,16 +13,18 @@
 			// Form Open
 			echo form_open_multipart(base_url('admin/artikel/edit/'.$artikel->id_artikel), 'class="form-horizontal"');
 		?>
-		<div class="row d-flex">
-			<div class="col-12 mb-3">
-				<h6 class="font-weight-bold">
+		<div class="row">
+			<div class="col-12">
+				<h6 class="font-weight-bold mr-5">
 					Status :
 					<?php if ($artikel->status == "publish") {?>
-					<span class="badge badge-success"><?php echo $artikel->status ?></span>
+					<span class="badge badge-primary"><?php echo $artikel->status ?></span>
 					<?php 
 					}elseif ($artikel->status == "draft") {?>
-					<span class="badge badge-warning"><?php echo $artikel->status ?></span>
+					<span class="badge badge-secondary"><?php echo $artikel->status ?></span>
 					<?php }?>
+					<a href="<?php echo base_url('berita/detail/'.$artikel->slug)?>"><span
+							class="badge badge-success"><i class="fas fa-eye"></i> Lihat Artikel</span></a>
 				</h6>
 			</div>
 			<div class="col-12">
@@ -49,8 +51,12 @@
 					<div class="">
 						<select name="kategori" class="form-control">
 							<option value="berita">Berita</option>
-							<option value="pemrograman terstruktur">Pemrograman Terstruktur</option>
-							<option value="struktur data">Struktur Data</option>
+							<option value="pemrograman terstruktur"
+								<?php if ($artikel->kategori=="pemrograman terstruktur") { echo "selected";} ?>>
+								Pemrograman Terstruktur</option>
+							<option value="struktur data"
+								<?php if ($artikel->kategori=="struktur data") { echo "selected";} ?>>
+								Struktur Data</option>
 						</select>
 					</div>
 				</div>
@@ -61,7 +67,8 @@
 					<div class="">
 						<select name="status" class="form-control">
 							<option value="publish">publish</option>
-							<option value="draft">draft</option>
+							<option value="draft" <?php if ($artikel->status=="draft") { echo "selected";} ?>>draft
+							</option>
 						</select>
 					</div>
 				</div>
@@ -76,7 +83,7 @@
 			<div class="col-12">
 				<div class="form-group">
 					<label class="control-label">Isi Artikel</label>
-					<textarea id="full-featured-non-premium" rows="35" name="artikel"
+					<textarea id="full-featured-non-premium" rows=" 35" name="artikel"
 						value=""><?php echo $artikel->artikel ?></textarea>
 				</div>
 			</div>
