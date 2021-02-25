@@ -14,15 +14,16 @@
 	<ul class="navbar-nav ml-auto">
 		<li class="nav-item dropdown user-menu">
 			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-				<!-- <?php $gambar = $this->session->userdata('gambar');?>
+				<?php $gambar = $this->session->userdata('gambar');?>
 				<img src="<?php echo base_url('assets/upload/image/thumbs/'.$gambar) ?>"
-					class="user-image img-circle elevation-2" alt="User Image"> -->
+					class="user-image img-circle elevation-2" alt="User Image">
 				<strong class="d-none d-md-inline"><?php echo $this->session->userdata('nama'); ?></strong>
 			</a>
 			<ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
 				<!-- User image -->
 				<li class="user-header bg-primary">
-					<img src="<?php echo base_url() ?>assets/logo.png" class="img-circle elevation-2" alt="User Image">
+					<img src="<?php echo base_url('assets/upload/image/thumbs/'.$gambar) ?>"
+						class="img-circle elevation-2" alt="User Image">
 					<p>
 						<strong><?php echo $this->session->userdata('username'); ?></strong>
 						<?php
@@ -45,7 +46,7 @@
 					<a href="<?php echo base_url('admin/user/edit/'.$id_user) ?>" class="btn btn-default btn-flat"><i
 							class="far fa-id-card"></i> Profile</a>
 					<a href="<?php echo base_url('root/logout')?>" class="btn btn-default btn-flat float-right"><i
-							class="fas fa-sign-out-alt"></i> Sign
+							class="fas fa-sign-out-alt"></i> Log
 						out</a>
 				</li>
 			</ul>

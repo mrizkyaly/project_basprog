@@ -41,6 +41,9 @@
 					<li>
 						<a href="<?php echo base_url('asistenlab') ?>">Asisten Laboratorium</a>
 					</li>
+					<li>
+						<a href="<?php echo base_url('tools') ?>">Alat & Berkas</a>
+					</li>
 				</ul>
 			</div>
 		</div>

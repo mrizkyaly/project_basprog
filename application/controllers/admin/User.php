@@ -19,7 +19,7 @@ class User extends CI_Controller {
 		$user = $this->user_model->listing();
 
 		// Load view
-		$data = array( 	'title' => 'Daftar User',
+		$data = array( 	'title' => 'Daftar Aslab',
 						'user' 	=> $user,
 						'isi' 	=> 'admin/user/list'
 					);
@@ -65,7 +65,7 @@ class User extends CI_Controller {
 			$this->load->library('upload', $config);
 
 			if (! $this->upload->do_upload('gambar')) {
-				$data = array(	'title'	=> 'Tambah user',
+				$data = array( 'title' => 'Tambah Aslab',
 								'error'	=> $this->upload->display_errors(),
 								'isi'	=> 'admin/user/tambah'
 							);
@@ -95,7 +95,7 @@ class User extends CI_Controller {
 								'whatsapp' 	=> $i->post('whatsapp'),
 								'jabatan' 	=> $i->post('jabatan'),
 								'username'	=> $i->post('username'),
-								'password' 	=> SHA1($i->post('password')),
+								'password' 	=> base64_encode($i->post('password')),
 								'gambar' 	=> $upload_gambar['upload_data']['file_name'],
 								'level'		=> $i->post('level')
 							);
@@ -104,7 +104,7 @@ class User extends CI_Controller {
 				redirect(base_url('admin/user'),'refresh');
 			}
 		}
-		$data = array( 	'title' 	=> 'Tambah User',
+		$data = array( 'title' => 'Tambah Aslab',
 						'isi' 	=> 'admin/user/tambah'
 						);
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
@@ -143,7 +143,7 @@ class User extends CI_Controller {
 				$this->load->library('upload', $config);
 
 				if (! $this->upload->do_upload('gambar')) {
-					$data = array(	'title'		=> 'Edit User ~ '.$user->nama,
+					$data = array( 'title' => 'Edit Aslab',
 									'user'		=> $user,	
 									'error'		=> $this->upload->display_errors(),
 									'isi'		=> 'admin/user/edit'
@@ -175,7 +175,7 @@ class User extends CI_Controller {
 									'whatsapp' 	=> $i->post('whatsapp'),
 									'jabatan' 	=> $i->post('jabatan'),
 									'username' 	=> $i->post('username'),
-									'password' 	=> SHA1($i->post('password')),
+									'password' 	=> base64_encode($i->post('password')),
 									'gambar' 	=> $upload_gambar['upload_data']['file_name'],
 									'level' 	=> $i->post('level')
 									);
@@ -193,8 +193,7 @@ class User extends CI_Controller {
 									'whatsapp' 	=> $i->post('whatsapp'),
 									'jabatan' 	=> $i->post('jabatan'),
 									'username' 	=> $i->post('username'),
-									'password' 	=> SHA1($i->post('password')),
-									// 'gambar' 	=> $upload_gambar['upload_data']['file_name'],
+									'password' 	=> base64_encode($i->post('password')),
 									'level' 	=> $i->post('level')
 									);
 
@@ -203,7 +202,7 @@ class User extends CI_Controller {
 					redirect(base_url('admin/user'),'refresh');
 			}
 		}
-		$data = array(  'title'     => 'Edit User',
+		$data = array( 'title' => 'Edit Aslab',
                         'user'    => $user,
                         'isi'       => 'admin/user/edit'
                     );

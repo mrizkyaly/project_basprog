@@ -4,7 +4,7 @@
 		<p>
 			<a href="<?php echo base_url('admin/user/tambah') ?>" class="btn btn-success btn-md">
 				<i class="nav-icon fa fa-plus"></i>
-				Tambah User
+				Tambah Aslab
 			</a>
 		</p>
 

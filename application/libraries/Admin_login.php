@@ -10,7 +10,7 @@ class Admin_login
 	{
 		$this->CI =& get_instance();
 		// Load data model user
-		$this->CI->load->model('user_model');;
+		$this->CI->load->model('user_model');
 	}
 
 	// Fungsi Login

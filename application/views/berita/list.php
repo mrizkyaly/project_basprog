@@ -9,23 +9,21 @@
 			<p class="text-center">Informasi Praktikum Pemrograman Terstruktur
 				di Laboratorium Bahasa Pemrograman</p>
 		</div>
-		<div class="row px-3 mt-4">
-			<div class="col-lg-12 p-1">
-				<ul class="nav card-filter">
-					<li class="nav-item me-1 p-1">
-						<a class="nav-link" aria-current="page" href="#" data-filter=".news"><i
-								class="fa fa-newspaper-o"></i> Berita</a>
-					</li>
-					<li class="nav-item me-1 p-1">
-						<a class="nav-link" href="#" data-filter=".petruk"><i class="fa fa-code"></i> Pemrograman
-							Terstruktur</a>
-					</li>
-					<li class="nav-item me-1 p-1">
-						<a class="nav-link" href="#" data-filter=".strukdat"><i class="fa fa-tasks"></i> Struktur
-							Data</a>
-					</li>
-				</ul>
-			</div>
+		<div class="d-flex mt-4 justify-content-center">
+			<ul class="nav card-filter">
+				<li class="nav-item me-1 p-1">
+					<a class="nav-link" aria-current="page" href="#" data-filter=".news"><i
+							class="fa fa-newspaper-o"></i> Berita</a>
+				</li>
+				<li class="nav-item me-1 p-1">
+					<a class="nav-link" href="#" data-filter=".petruk"><i class="fa fa-code"></i> Pemrograman
+						Terstruktur</a>
+				</li>
+				<li class="nav-item me-1 p-1">
+					<a class="nav-link" href="#" data-filter=".strukdat"><i class="fa fa-tasks"></i> Struktur
+						Data</a>
+				</li>
+			</ul>
 		</div>
 		<div class="list row mt-3 justify-content-beetween">
 			<?php foreach ($artikel as $artikel) {?>
@@ -34,8 +32,8 @@
 			<div class="col-lg-4 my-2 element-item news">
 				<div class="card p-2 pb-0">
 					<div class="card-body">
-						<img src="<?php echo base_url('assets/upload/image/thumbs/'.$artikel->gambar_artikel) ?>"
-							class="card-img-top" alt="...">
+						<img src="<?php echo base_url('assets/upload/image/'.$artikel->gambar_artikel) ?>"
+							class="card-img-top w-100 rounded-3" alt="...">
 						<div class="dflex mt-3">
 							<a href="news.html">
 								<span class="badge badge-berita">
@@ -75,12 +73,12 @@
 			<div class="col-lg-4 my-2 element-item petruk">
 				<div class="card p-2 pb-0">
 					<div class="card-body">
-						<img src="<?php echo base_url('assets/upload/image/thumbs/'.$artikel->gambar_artikel) ?>"
-							class="card-img-top" alt="...">
+						<img src="<?php echo base_url('assets/upload/image/'.$artikel->gambar_artikel) ?>"
+							class="card-img-top w-100 rounded-3" alt="...">
 						<div class="dflex mt-3">
 							<a href="news.html">
 								<span class="badge badge-pt">
-									<i class="fa fa-newspaper-o"></i> <?php echo $artikel->kategori?>
+									<i class="fa fa-code"></i> <?php echo $artikel->kategori?>
 								</span>
 							</a>
 						</div>
@@ -116,12 +114,12 @@
 			<div class="col-lg-4 my-2 element-item strukdat">
 				<div class="card p-2 pb-0">
 					<div class="card-body">
-						<img src="<?php echo base_url('assets/upload/image/thumbs/'.$artikel->gambar_artikel) ?>"
-							class="card-img-top" alt="...">
+						<img src="<?php echo base_url('assets/upload/image/'.$artikel->gambar_artikel) ?>"
+							class="card-img-top w-100 rounded-3" alt="...">
 						<div class="dflex mt-3">
 							<a href="news.html">
 								<span class="badge badge-sd">
-									<i class="fa fa-newspaper-o"></i> <?php echo $artikel->kategori?>
+									<i class="fa fa-tasks"></i> <?php echo $artikel->kategori?>
 								</span>
 							</a>
 						</div>

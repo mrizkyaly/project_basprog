@@ -16,7 +16,7 @@
 		<div class="row d-flex">
 			<div class="col-8">
 				<div class="form-group">
-					<label class="control-label">Nama User</label>
+					<label class="control-label">Nama Aslab</label>
 					<div class="">
 						<input type="text" name="nama" class="form-control" placeholder=""
 							value="<?php echo $user->nama ?>" required>
@@ -88,13 +88,13 @@
 					<label class="control-label">Password</label>
 					<div class="">
 						<input type="password" name="password" class="form-control" placeholder=""
-							value="<?php echo $user->password ?>" required>
+							value="<?php echo base64_decode($user->password) ?>" required>
 					</div>
 				</div>
 			</div>
 			<div class="col-12">
 				<div class="form-group">
-					<label class="control-label">Foto User</label>
+					<label class="control-label">Foto Aslab</label>
 					<div class="custom-file">
 						<input type="file" name="gambar" class="custom-file-input" id="exampleInputFile">
 						<label class="custom-file-label" for="exampleInputFile">Pilih file</label>

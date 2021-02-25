@@ -68,7 +68,7 @@
 				</div>
 			</div>
 			<div class="col-12 mt-2">
-				<button class="btn btn-success btn-md px-5" name="submit" type="submit">
+				<button class="btn btn-success btn-md btn-block px-5" name="submit" type="submit">
 					<i class="fa fa-save"></i> Simpan
 				</button>
 			</div>

@@ -29,17 +29,30 @@
 						<p>Daftar Artikel</p>
 					</a>
 				</li>
-				<li class="nav-header">SETTING</li>
+				<li class="nav-header">USER</li>
 				<li class="nav-item">
 					<a href="<?php echo base_url('admin/user') ?>" class="nav-link">
 						<i class="nav-icon fas fa-users"></i>
-						<p>User</p>
+						<p>Asisten Laboratorium</p>
 					</a>
 				</li>
+				<li class="nav-header">SETTING</li>
 				<li class="nav-item">
 					<a href="<?php echo base_url('admin/konfigurasi') ?>" class="nav-link">
 						<i class="nav-icon fas fa-wrench"></i>
 						<p>Konfigurasi Website</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="<?php echo base_url('admin/tools') ?>" class="nav-link">
+						<i class="nav-icon fas fa-toolbox"></i>
+						<p>Konfigurasi Peralatan</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="<?php echo base_url('admin/berkas') ?>" class="nav-link">
+						<i class="nav-icon far fa-file-alt"></i>
+						<p>Konfigurasi Berkas</p>
 					</a>
 				</li>
 			</ul>

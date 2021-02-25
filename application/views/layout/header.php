@@ -28,7 +28,12 @@
 							<ul class="dropdown-menu py-3" aria-labelledby="navbarDropdown">
 								<li>
 									<a class="dropdown-item px-4 py-3" href="<?php echo base_url('asistenlab')?>">
-										<i class="fa fa-user"></i></i> Asisten Laboratorium
+										<i class="fa fa-id-card"></i></i> Asisten Laboratorium
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item px-4 py-3" href="<?php echo base_url('tools')?>">
+										<i class="fa fa-archive"></i></i> Alat & Berkas
 									</a>
 								</li>
 							</ul>

@@ -26,4 +26,18 @@ $(document).ready(function () {
 
         return false;
     });
+
+    let $btnberkas = $('.btn-filter');
+
+    $btnberkas.click(function (e) {
+        $('.btn-filter .btn').removeClass('active');
+        e.target.classList.add('active');
+
+        let selector = $(e.target).attr('data-filter');
+        $('#tools .table-berkas').isotope({
+            filter: selector
+        });
+
+        return false;
+    });
 });
