@@ -642,8 +642,40 @@ footer span {
 	color: var(--primary-color);
 }
 
+
+/* Error section */
+#error img {
+	width: 45%;
+}
+
 #error .card {
 	border: none;
+}
+
+#error h1 {
+	color: var(--primary-color);
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+#error p {
+	color: #b0b0b0;
+}
+
+.btn-error {
+	border: 2px solid var(--primary-color);
+	background-color: transparent;
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+	transition: all ease-in-out 0.3s;
+	font-weight: 600;
+	padding: 0px 10px;
+}
+
+.btn-error:hover {
+	color: var(--primary-color);
+	border-radius: 25px;
+	padding: 0px 30px;
 	box-shadow: 4px 8px 25px rgb(7, 104, 159, 0.2);
 }
 
@@ -742,5 +774,9 @@ footer span {
 
 	#tools .table {
 		font-size: 10px;
+	}
+
+	.btn-error:hover {
+		display: none;
 	}
 }

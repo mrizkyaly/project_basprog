@@ -14,7 +14,7 @@
 			echo form_open_multipart(base_url('admin/user/edit/'.$user->id_user), 'class="form-horizontal"');
 		?>
 		<div class="row d-flex">
-			<div class="col-8">
+			<div class="col-lg-8 col-12">
 				<div class="form-group">
 					<label class="control-label">Nama Aslab</label>
 					<div class="">
@@ -23,7 +23,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-12">
 				<div class="form-group">
 					<label class="control-label">NPM</label>
 					<div class="">
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-12">
 				<div class="form-group">
 					<label class="control-label">Nomor</label>
 					<div class="">
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-12">
 				<div class="form-group">
 					<label class="control-label">Link WhatsApp</label>
 					<div class="">
@@ -50,12 +50,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-8">
 				<div class="form-group">
 					<label class="control-label">Jabatan</label>
 					<div class="">
 						<select name="jabatan" class="form-control">
-							<option value="Koordiantor Laboratorium">Koordiantor Laboratorium</option>
+							<option value="Koordinator Laboratorium">Koordinator Laboratorium</option>
 							<option value="Asisten Laboratorium"
 								<?php if ($user->jabatan=="Asisten Laboratorium") { echo "selected";} ?>>
 								Asisten Laboratorium</option>
@@ -63,18 +63,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-4">
 				<div class="form-group">
 					<label class="control-label">Level Hak Akses</label>
 					<div class="">
 						<select name="level" class="form-control">
-							<option value="admin">admin</option>
-							<option value="user" <?php if ($user->level=="user") { echo "selected";} ?>>user</option>
+							<option value="aktif">aktif</option>
+							<option value="pensiun" <?php if ($user->level=="pensiun") { echo "selected";} ?>>pensiun
+							</option>
 						</select>
 					</div>
 				</div>
 			</div>
-			<div class="col-7">
+			<div class="col-lg-7 col-12">
 				<div class="form-group">
 					<label class="control-label">Username</label>
 					<div class="">
@@ -83,7 +84,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-5">
+			<div class="col-lg-5 col-12">
 				<div class="form-group">
 					<label class="control-label">Password</label>
 					<div class="">

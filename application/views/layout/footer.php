@@ -14,9 +14,9 @@
 						Dan Struktur Data</p>
 				</div>
 				<div class="">
-					<a href="https://www.instagram.com/lbp.itats/"><i class="fa fa-instagram me-3"></i></a>
-					<a href="https://www.youtube.com/channel/UC4HUifNHKlSk-IY9l2NvqIg/featured"></a><i
-						class="fa fa-youtube-play me-3"></i>
+					<a href="https://www.instagram.com/lbp.itats/"><i class="fab fa-instagram me-3"></i></a>
+					<a href="https://www.youtube.com/channel/UC4HUifNHKlSk-IY9l2NvqIg/featured"><i
+							class="fab fa-youtube me-3"></i></a>
 				</div>
 			</div>
 			<div class="col-lg-3 p-3">
@@ -61,22 +61,16 @@
 <a href="#" class="btn btn-warning btn-lg back-to-top invisible" role="button"><i class="fa fa-arrow-up"></i></a>
 
 <!-- Jquery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
+<script src="<?php echo base_url() ?>assets/client/vendor/jquery.js"></script>
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-	integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-	integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
-</script>
+<!-- Local: Separate Popper and Bootstrap JS -->
+<script src="<?php echo base_url() ?>assets/client/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 
 <!-- Isotope JS -->
-<script src="<?php echo base_url() ?>assets/client/assets/vendor/isotope/isotope.min.js"></script>
+<script src="<?php echo base_url() ?>assets/client/vendor/isotope.min.js"></script>
 <!-- My JS -->
 <script src="<?php echo base_url() ?>assets/client/assets/js/main.js" type="text/javascript"></script>
+
 </body>
 
 </html>

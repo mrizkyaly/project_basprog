@@ -17,7 +17,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-12">
 				<div class="form-group">
 					<label class="control-label">Link Berkas</label>
 					<div class="">
@@ -26,7 +26,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-8">
 				<div class="form-group">
 					<label class="control-label">Kategori</label>
 					<div class="">
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-4">
 				<div class="form-group">
 					<label class="control-label">Status</label>
 					<div class="">
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="col-12 mt-2">
-				<button class="btn btn-success btn-md px-5" name="submit" type="submit">
+				<button class="btn btn-success btn-block btn-md px-5" name="submit" type="submit">
 					<i class="fa fa-save"></i> Simpan
 				</button>
 			</div>

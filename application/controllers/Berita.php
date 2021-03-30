@@ -27,15 +27,25 @@ class Berita extends CI_Controller {
 		$this->load->view('layout/wrapper', $data, FALSE);
 	}
 
-	public function detail($slug)
+	public function detail($slug=null)
 	{
 		$artikel = $this->artikel_model->read($slug);
 
-		$data = array( 	'title' 	=> $artikel->judul,
-						'artikel' 	=> $artikel,
-						'isi' 		=> 'berita/detail'
-					);
-		$this->load->view('layout/wrapper', $data, FALSE);
+		if($artikel=="" || $slug==null)
+		{
+			$this->output->set_status_header('404');
+			$data = array(	'title' => '404',
+							'isi' => 'err404'
+						);
+			$this->load->view('layout/wrapper', $data, FALSE);
+			
+		} else {
+			$data = array( 	'title' => $artikel->judul,
+							'artikel' => $artikel,
+							'isi' => 'berita/detail'
+						);
+			$this->load->view('layout/wrapper', $data, FALSE);
+		}
 	}
         
 }

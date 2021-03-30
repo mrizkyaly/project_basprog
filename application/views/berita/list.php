@@ -13,14 +13,14 @@
 			<ul class="nav card-filter">
 				<li class="nav-item me-1 p-1">
 					<a class="nav-link" aria-current="page" href="#" data-filter=".news"><i
-							class="fa fa-newspaper-o"></i> Berita</a>
+							class="far fa-newspaper"></i> Berita</a>
 				</li>
 				<li class="nav-item me-1 p-1">
 					<a class="nav-link" href="#" data-filter=".petruk"><i class="fa fa-code"></i> Pemrograman
 						Terstruktur</a>
 				</li>
 				<li class="nav-item me-1 p-1">
-					<a class="nav-link" href="#" data-filter=".strukdat"><i class="fa fa-tasks"></i> Struktur
+					<a class="nav-link" href="#" data-filter=".strukdat"><i class="fas fa-server"></i> Struktur
 						Data</a>
 				</li>
 			</ul>
@@ -37,7 +37,7 @@
 						<div class="dflex mt-3">
 							<a href="news.html">
 								<span class="badge badge-berita">
-									<i class="fa fa-newspaper-o"></i> <?php echo $artikel->kategori?>
+									<i class="far fa-newspaper"></i> <?php echo $artikel->kategori?>
 								</span>
 							</a>
 						</div>
@@ -119,7 +119,7 @@
 						<div class="dflex mt-3">
 							<a href="news.html">
 								<span class="badge badge-sd">
-									<i class="fa fa-tasks"></i> <?php echo $artikel->kategori?>
+									<i class="fas fa-server"></i> <?php echo $artikel->kategori?>
 								</span>
 							</a>
 						</div>

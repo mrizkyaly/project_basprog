@@ -23,7 +23,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-12">
 				<div class="form-group">
 					<label class="control-label">Gambar Thumbnail</label>
 					<div class="custom-file">
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-8">
 				<div class="form-group">
 					<label class="control-label">Kategori</label>
 					<div class="">
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-2">
+			<div class="col-lg-2 col-4">
 				<div class="form-group">
 					<label class="control-label">Status</label>
 					<div class="">

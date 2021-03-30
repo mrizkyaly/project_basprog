@@ -14,7 +14,7 @@
 			echo form_open_multipart(base_url('admin/tools/edit/'.$tools->id_tool), 'class="form-horizontal"');
 		?>
 		<div class="row d-flex">
-			<div class="col-6">
+			<div class="col-lg-6 col-12">
 				<div class="form-group">
 					<label class="control-label">Nama</label>
 					<div class="">
@@ -23,7 +23,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-12">
 				<div class="form-group">
 					<label class="control-label">Link</label>
 					<div class="">
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-12">
 				<div class="form-group">
 					<label class="control-label">Status</label>
 					<div class="">
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-12">
 				<div class="form-group">
 					<label class="control-label">logo</label>
 					<div class="custom-file">

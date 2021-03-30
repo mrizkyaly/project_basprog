@@ -28,13 +28,13 @@
 						<strong><?php echo $this->session->userdata('username'); ?></strong>
 						<?php
 							$level = $this->session->userdata('level');
-							if ($level == "admin") {
+							if ($level == "aktif") {
 						?>
 						<span class="badge badge-success"><?php echo $this->session->userdata('level'); ?></span>
 						<?php 
-							}elseif ($level == "user") {
+							}elseif ($level == "pensiun") {
 						?>
-						<span class="badge badge-warning"><?php echo $this->session->userdata('level'); ?></span>
+						<span class="badge badge-danger"><?php echo $this->session->userdata('level'); ?></span>
 						<?php }?>
 						<br>
 						<small>Terakhir Login <?php echo date('d M Y') ?></small>

@@ -2,8 +2,8 @@
 <section id="jumbotron">
 	<div class="container">
 		<div class="row px-2">
-			<div class="col-lg-6 py-3">
-				<div class="card p-4">
+			<div class="col-lg-6 py-2">
+				<div class="card p-2">
 					<div class="card-body text-capitalize">
 						<div class="mb-3">
 							<h5>#BelajarPemrograman</h5>
@@ -23,7 +23,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 py-3">
+			<div class="col-lg-6 py-2">
 				<img src="<?php echo base_url() ?>assets/client/assets/img/ilustration-jumbotorn.jpg"
 					class="mx-auto d-block w-100" alt="...">
 			</div>
@@ -78,7 +78,7 @@
 					alt="...">
 			</div>
 			<div class="col-lg-6">
-				<div class="card p-4">
+				<div class="card p-2">
 					<div class="card-body">
 						<div class="mb-3">
 							<h5>#kerjasamatim</h5>

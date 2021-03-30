@@ -49,19 +49,23 @@
 		</div>
 		<div class="row mt-5 p-1 justify-content-center">
 			<?php foreach ($user as $user) {?>
+			<?php 
+				if ($user->level == "aktif") {
+			?>
 			<div class="col-lg-3 col-6 text-center">
-				<div class="card pt-4 mx-auto d-block my-2">
+				<div class="card pt-3 m-3 mx-auto d-block w-100">
 					<img src="<?php echo base_url('assets/upload/image/thumbs/'.$user->gambar) ?>"
-						class="img-fluid img-thumbnail rounded-circle mx-auto d-block" width="100px" alt="...">
+						class="img-fluid img-thumbnail rounded-circle mx-auto d-block w-50" alt="...">
 					<div class="card-body">
 						<h6 class="card-title"><?php echo $user->nama ?></h6>
 						<span class="card-subtitle text-muted"><?php echo $user->jabatan ?></span>
 						<div class="mt-3">
-							<a href="<?php echo $user->whatsapp?>"><i class="fa fa-whatsapp"></i></a>
+							<a href="<?php echo $user->whatsapp?>"><i class="fab fa-whatsapp"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<?php }?>
 			<?php }?>
 		</div>
 	</div>

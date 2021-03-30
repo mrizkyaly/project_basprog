@@ -44,13 +44,13 @@
 					<td><span class="badge badge-secondary"><?php echo $user->jabatan ?></span></td>
 					<td><?php echo $user->username ?></td>
 					<?php 
-						if ($user->level == "admin") {
+						if ($user->level == "aktif") {
 					?>
 					<td><span class="badge badge-success"><?php echo $user->level ?></span></td>
 					<?php 
-					}elseif ($user->level == "user") {
+					}elseif ($user->level == "pensiun") {
 					?>
-					<td><span class="badge badge-warning"><?php echo $user->level ?></span></td>
+					<td><span class="badge badge-danger"><?php echo $user->level ?></span></td>
 					<?php }?>
 					<td>
 						<a href="<?php echo base_url('admin/user/edit/'.$user->id_user) ?>"

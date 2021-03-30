@@ -39,7 +39,7 @@
 	<!-- Tiny MCE -->
 	<script src="https://cdn.tiny.cloud/1/cn1kl45xy0gr2qjcg54aabqxsjpu7stixtfz8aa74ccmgb6f/tinymce/5/tinymce.min.js"
 		referrerpolicy="origin"></script>
-	<script src="<?php echo base_url() ?>assets/vendor/tinymce.js"></script>
+	<script src="<?php echo base_url() ?>assets/client/vendor/tinymce.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">

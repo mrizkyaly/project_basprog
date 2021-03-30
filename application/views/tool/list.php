@@ -33,45 +33,43 @@
 			<?php }?>
 		</div>
 		<div class="row mt-5">
-			<div class="mb-4">
+			<div class="mb-3">
 				<h3>Berkas Praktikum</h3>
 			</div>
-			<div class="row">
-				<div class="card card-table card-body element-item petruk w-100 rounded-3">
-					<table class="table table-responsive table-borderless table-striped">
-						<thead>
-							<tr>
-								<th>BERKAS</th>
-								<th>KATEGORI</th>
-							</tr>
-						</thead>
-						<tbody>
-							<?php foreach ($berkas as $berkas) {?>
-							<?php if ($berkas->status == "publish") {?>
-							<?php if ($berkas->kategori == "pemrograman terstruktur") {?>
-							<tr>
-								<td><a href="<?php echo $berkas->link?>"><?php echo $berkas->nama ?></a></td>
-								<td>
-									<span class="badge badge-pt">
-										<i class="fa fa-code"></i> <?php echo $berkas->kategori ?>
-									</span>
-								</td>
-							</tr>
-							<?php }elseif ($berkas->kategori == "struktur data") {?>
-							<tr>
-								<td><a href="<?php echo $berkas->link?>"><?php echo $berkas->nama ?></a></td>
-								<td>
-									<span class="badge badge-sd">
-										<i class="fa fa-tasks"></i> <?php echo $berkas->kategori ?>
-									</span>
-								</td>
-							</tr>
-							<?php }?>
-							<?php }?>
-							<?php }?>
-						</tbody>
-					</table>
-				</div>
+			<div class="card card-table card-body element-item petruk w-100 rounded-3">
+				<table class="table table-responsive table-borderless table-striped">
+					<thead>
+						<tr>
+							<th>BERKAS</th>
+							<th>KATEGORI</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach ($berkas as $berkas) {?>
+						<?php if ($berkas->status == "publish") {?>
+						<?php if ($berkas->kategori == "pemrograman terstruktur") {?>
+						<tr>
+							<td><a href="<?php echo $berkas->link?>"><?php echo $berkas->nama ?></a></td>
+							<td>
+								<span class="badge badge-pt">
+									<i class="fa fa-code"></i> <?php echo $berkas->kategori ?>
+								</span>
+							</td>
+						</tr>
+						<?php }elseif ($berkas->kategori == "struktur data") {?>
+						<tr>
+							<td><a href="<?php echo $berkas->link?>"><?php echo $berkas->nama ?></a></td>
+							<td>
+								<span class="badge badge-sd">
+									<i class="fas fa-server"></i> <?php echo $berkas->kategori ?>
+								</span>
+							</td>
+						</tr>
+						<?php }?>
+						<?php }?>
+						<?php }?>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
